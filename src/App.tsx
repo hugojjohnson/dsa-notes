@@ -6,10 +6,9 @@ import { MathJaxContext } from "better-react-mathjax"
 import Header from "./components/other/Header"
 import Dashboard from "./components/main/Dashboard"
 import { NoPage } from "./components/other/NoPage"
-// import Choose from "./components/main/Choose"
-// import Learn from "./components/main/Learn"
-import One from "./components/main/lessons/1"
-import Privacy from "./components/other/Privacy"
+import One from "./components/main/lessons/lesson-1"
+import Two from "./components/main/lessons/lesson-2"
+import Feedback from "./components/other/Feedback"
 
 function App(): React.ReactElement {
   const config = {
@@ -33,10 +32,9 @@ function App(): React.ReactElement {
         <Routes>
           <Route path="/" element={<Header />}>
             <Route index element={<Dashboard />} />
-            {/* <Route path="learn/" element={<Learn />} />
-            <Route path="choose/:topicid?" element={<Choose />} /> */}
-            <Route path="one" element={<One />} />
-            <Route path="privacy" element={<Privacy />} />
+            <Route path="1-big-o-notation" element={<One />} />
+            <Route path="2-lists" element={<Two />} />
+            <Route path="feedback" element={<Feedback />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>

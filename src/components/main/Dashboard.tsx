@@ -10,7 +10,7 @@ export default function Dashboard() {
             <div className="flex flex-row justify-between">
                 <h1 className="text-2xl mb-5">{name}</h1>
                 <div className="flex flex-row items-center justify-center gap-2">
-                    <img src="log-icons/4.jpg" alt="clock" className="w-10 h-10" />
+                    <img src="misc/clock.png" alt="clock" className="w-6" />
                     <p>{duration} minutes</p>
                 </div>
             </div>
@@ -21,9 +21,9 @@ export default function Dashboard() {
                         {bulletPoints.map(bulletPoint => <li>{bulletPoint}</li>)}
                     </ul>
 
-                    <div className="inline-flex flex-row gap-2 items-center mt-6 bg-red-100 rounded-md p-1 pr-2">
-                        <img src="log-icons/3.png" alt="clock" className="w-7 h-7" />
-                        <p className="text-red-600">{questions} questions</p>
+                    <div className="inline-flex flex-row gap-2 items-center mt-6 bg-green-100 rounded-md p-1 pr-2">
+                        <img src="misc/tick.png" alt="clock" className="w-7 h-7" />
+                        <p className="text-green-600">{questions} questions</p>
                     </div>
                 </div>
             </div>
@@ -35,7 +35,7 @@ export default function Dashboard() {
         {
             weekCard({
                 name: "Week 1: Big O notation",
-                icon: "/log-icons/1.jpg",
+                icon: "icons/o-n.png",
                 bulletPoints: [
                     "Algorithms solve computational problems by defining steps from input to output.",
                     "Asymptotic analysis (Big - O, Ω, Θ) helps compare algorithm efficiency.",
@@ -43,13 +43,27 @@ export default function Dashboard() {
                 ],
                 duration: 10,
                 questions: 10,
-                link: "one"
+                link: "1-big-o-notation"
             })
         }
         {
             weekCard({
                 name: "Week 2: Something else",
-                icon: "/log-icons/5.jpg",
+                icon: "icons/chain.jpg",
+                bulletPoints: [
+                    "Find another skill to add",
+                    "Probably ask ChatGPT",
+                    "She'll be Alright"
+                ],
+                duration: 15,
+                questions: 5,
+                link: "2-lists"
+            })
+        },
+        {
+            weekCard({
+                name: "Week 2: Something else",
+                icon: "icons/chain.jpg",
                 bulletPoints: [
                     "Find another skill to add",
                     "Probably ask ChatGPT",
