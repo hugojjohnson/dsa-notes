@@ -29,7 +29,7 @@ function App(): React.ReactElement {
 
   return (
     <MathJaxContext config={config}>
-      <BrowserRouter>
+      <BrowserRouter basename="dsa-notes">
         <Routes>
           <Route path="/" element={<Header />}>
             <Route index element={<Dashboard />} />
