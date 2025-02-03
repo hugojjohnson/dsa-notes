@@ -19,6 +19,6 @@ export default defineConfig({
     }
   },
   server: {
-    open: "dsa-notes"
+    open: ""
   }
 })
