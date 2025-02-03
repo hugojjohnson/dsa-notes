@@ -10,7 +10,7 @@ export default function Dashboard() {
             <div className="flex flex-row justify-between">
                 <h1 className="text-2xl mb-5">{name}</h1>
                 <div className="flex flex-row items-center justify-center gap-2">
-                    <img src="/log-icons/4.jpg" alt="clock" className="w-10 h-10" />
+                    <img src="log-icons/4.jpg" alt="clock" className="w-10 h-10" />
                     <p>{duration} minutes</p>
                 </div>
             </div>
@@ -22,7 +22,7 @@ export default function Dashboard() {
                     </ul>
 
                     <div className="inline-flex flex-row gap-2 items-center mt-6 bg-red-100 rounded-md p-1 pr-2">
-                        <img src="/log-icons/3.png" alt="clock" className="w-7 h-7" />
+                        <img src="log-icons/3.png" alt="clock" className="w-7 h-7" />
                         <p className="text-red-600">{questions} questions</p>
                     </div>
                 </div>
