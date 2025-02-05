@@ -2,7 +2,7 @@ import { MathJax } from "better-react-mathjax";
 import Tip from "../../other/Tip";
 import { useState } from "react";
 import { Question } from "../Question";
-import { generateQ1, generateQ2, generateQ3 } from "../questions/question-1";
+import { generateQ1, generateQ2, generateQ3 } from "../questions/1-question";
 
 
 /**

@@ -6,7 +6,7 @@ export const Question = ({ callback, generate }: { callback: () => void, generat
     const [selection, setSelection] = useState(-1)
     const [answer, setAnswer] = useState(generate())
     const [streak, setStreak] = useState(0)
-    const goal = 2
+    const goal = 10
 
     /** ========== Functions ========== **/
     const btnCol = (i: number) => {

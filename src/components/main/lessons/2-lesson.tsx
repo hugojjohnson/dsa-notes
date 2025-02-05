@@ -2,7 +2,7 @@ import { MathJax } from "better-react-mathjax";
 import Tip from "../../other/Tip";
 import { useState } from "react";
 import { Question } from "../Question";
-import { generateQ1, generateQ2, generateQ3 } from "../questions/question-1";
+import { Q2generateQ1 } from "../questions/2-question";
 
 
 /**
@@ -17,7 +17,7 @@ export default function Two() {
         setIndex(index + 1)
     }
 
-    const questions = [generateQ1, generateQ2, generateQ3]
+    const questions = [Q2generateQ1]
     const [index, setIndex] = useState(0)
 
     return <div className="mt-28 mx-auto max-w-screen-2xl w-full h-full flex flex-col markdown">

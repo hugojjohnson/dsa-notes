@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 export default function Dashboard() {
     /** ========== Functions ========== **/
     const weekCard = ({ name, icon, bulletPoints, duration, questions, link }: { name: string, icon: string, bulletPoints: string[], duration: number, questions: number, link: string }) => {
-        return <Link to={link} className="p-5 rounded-md bg-white m-10">
+        return <Link to={link} className="p-5 rounded-md bg-white m-10 mt-0">
             <div className="flex flex-row justify-between">
                 <h1 className="text-2xl mb-5">{name}</h1>
                 <div className="flex flex-row items-center justify-center gap-2">
@@ -31,7 +31,7 @@ export default function Dashboard() {
     }
 
     return <div className="mt-28 mx-auto max-w-screen-2xl w-full h-full flex flex-col">
-        <h1 className="text-4xl pt-5">COMP2123 Notes and Exercises</h1>
+        <h1 className="text-4xl pt-5 mb-10">COMP2123 Notes and Exercises</h1>
         {
             weekCard({
                 name: "Week 1: Big O notation",
@@ -48,12 +48,12 @@ export default function Dashboard() {
         }
         {
             weekCard({
-                name: "Week 2: Something else",
+                name: "Week 2: Arrays vs Linked Lists",
                 icon: "icons/chain.jpg",
                 bulletPoints: [
-                    "Find another skill to add",
-                    "Probably ask ChatGPT",
-                    "She'll be Alright"
+                    "Abstract Data Types (ADTs) define behavior, not implementation, for flexibility.",
+                    "Array-based lists allow O(1) access but costly insertions/removals.",
+                    "Linked lists support efficient insertions/deletions but lack random access.",
                 ],
                 duration: 15,
                 questions: 5,
@@ -62,16 +62,44 @@ export default function Dashboard() {
         },
         {
             weekCard({
-                name: "Week 2: Something else",
-                icon: "icons/chain.jpg",
+                name: "Week 3: Trees",
+                icon: "icons/tree.png",
                 bulletPoints: [
-                    "Find another skill to add",
-                    "Probably ask ChatGPT",
-                    "She'll be Alright"
+                    "Trees model hierarchical structures with parent - child relationships and a root.",
+                    "Traversals include pre- order, in -order, and post - order for processing nodes.",
+                    "Binary search trees enable efficient searching, insertion, and deletion in O(log n) time.",
                 ],
                 duration: 15,
                 questions: 5,
-                link: "one"
+                link: "3-trees"
+            })
+        },
+        {
+            weekCard({
+                name: "Week 4: Binary Search Trees",
+                icon: "icons/tree.png",
+                bulletPoints: [
+                    "BST property: Left subtree keys < node key < right subtree keys.",
+                    "Operations: Search, insert, delete in O(h); best case O(logn).",
+                    "Balancing: AVL trees maintain 𝑂(log⁡𝑛) height via rotations.",
+                ],
+                duration: 15,
+                questions: 5,
+                link: "4-bst"
+            })
+        },
+        {
+            weekCard({
+                name: "Week 5: Priority Queues",
+                icon: "icons/queue.jpg",
+                bulletPoints: [
+                    "Priority queues store key - value pairs and remove the smallest key.",
+                    "Heaps enable efficient insertions and removals in O(log n) time.",
+                    "Stock matching engines use priority queues for trade execution."
+                ],
+                duration: 15,
+                questions: 5,
+                link: "5-priority-queues"
             })
         }
     </div>
