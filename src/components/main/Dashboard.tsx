@@ -15,7 +15,7 @@ export default function Dashboard() {
                 </div>
             </div>
             <div className="flex flex-row gap-5">
-                <img src={icon} className="rounded-md w-32 h-32" />
+                <img src={icon} className="rounded-md w-32 object-contain" />
                 <div>
                     <ul className=" list-disc list-inside">
                         {bulletPoints.map(bulletPoint => <li>{bulletPoint}</li>)}
@@ -49,7 +49,7 @@ export default function Dashboard() {
         {
             weekCard({
                 name: "Week 2: Arrays vs Linked Lists",
-                icon: "icons/chain.jpg",
+                icon: "icons/array.png",
                 bulletPoints: [
                     "Abstract Data Types (ADTs) define behavior, not implementation, for flexibility.",
                     "Array-based lists allow O(1) access but costly insertions/removals.",
@@ -101,6 +101,104 @@ export default function Dashboard() {
                 questions: 5,
                 link: "5-priority-queues"
             })
+        },
+        {
+            weekCard({
+                name: "Week 6: Hash Tables",
+                icon: "icons/hash-tables.png",
+                bulletPoints: [
+                    "Hash tables provide O(1) expected time for insert, search, delete.",
+                    "Collisions are handled using chaining, probing, or cuckoo hashing methods.",
+                    "Load factor affects performance; resizing may be required for efficiency.",
+                ],
+                duration: 15,
+                questions: 5,
+                link: "6-hash-tables"
+            })
+        },
+        {
+            weekCard({
+                name: "Week 7: Graph Traversals",
+                icon: "icons/graph.jpg",
+                bulletPoints: [
+                    "Graphs consist of vertices(nodes) and edges(connections between them).",
+                    "DFS explores deeply first, while BFS visits breadth- wise level - by - level.",
+                    "Graph algorithms help find paths, cycles, and shortest distances.",
+                ],
+                duration: 15,
+                questions: 5,
+                link: "7-graph-traversals"
+            })
         }
+        {
+            weekCard({
+                name: "Week 8: Shortest Path",
+                icon: "icons/shortest-path.png",
+                bulletPoints: [
+                    "Dijkstra’s algorithm finds shortest paths in graphs with nonnegative weights.",
+                    "Minimum Spanning Trees (MST) minimize total edge weight in graphs.",
+                    "Prim’s and Kruskal’s algorithms efficiently compute MST using different approaches.",
+                ],
+                duration: 15,
+                questions: 5,
+                link: "8-shortest-path"
+            })
+        }
+        {
+            weekCard({
+                name: "Week 9: Greedy Algorithms",
+                icon: "icons/backpack.png",
+                bulletPoints: [
+                    "Greedy algorithms make locally optimal choices to build a solution.",
+                    "Fractional knapsack is optimally solved using benefit - to - weight ratio.",
+                    "Huffman encoding efficiently compresses text using a greedy tree.",
+                ],
+                duration: 15,
+                questions: 5,
+                link: "9-greedy-algorithms"
+            })
+        }
+        {
+            weekCard({
+                name: "Week 10: Divide and Conquer I",
+                icon: "icons/conqueror.png",
+                bulletPoints: [
+                    "Divide and Conquer splits problems, solves subproblems, and merges solutions efficiently.",
+                    "Binary search runs in O(log n) by halving the search space.",
+                    "Merge sort achieves O(n log n) by recursively sorting halves.",
+                ],
+                duration: 15,
+                questions: 5,
+                link: "10-divide-and-conquer-1"
+            })
+        }
+        {
+            weekCard({
+                name: "Week 11: Divide and Conquer II",
+                icon: "icons/recursion-tree.jpg",
+                bulletPoints: [
+                    "Divide and Conquer: Split problem, recursively solve, merge solutions for efficiency.",
+                    "Maxima-Set Algorithm: Sort, split, solve each half, merge non-dominated points.",
+                    "Karatsuba Multiplication: Reduces complexity using three recursive calls, faster computation."
+                ],
+                duration: 15,
+                questions: 5,
+                link: "11-divide-and-conquer-2"
+            })
+        }
+        {
+            weekCard({
+                name: "Week 12: Randomised Algorithms",
+                icon: "icons/dice.png",
+                bulletPoints: [
+                    "Randomised algorithms use randomness to improve efficiency and avoid worst cases.",
+                    "Fisher - Yates algorithm ensures uniform random permutations in O(n) time.",
+                    "Skip lists offer O(log n) search, insert, and delete performance."
+                ],
+                duration: 15,
+                questions: 5,
+                link: "12-randomised-algorithms"
+            })
+        }        
     </div>
 }

@@ -3,6 +3,7 @@ import Tip from "../../other/Tip";
 import { useState } from "react";
 import { Question } from "../Question";
 import { Q3generateQ1 } from "../questions/3-question";
+import VideoResource from "../../other/VideoResource";
 
 
 /**
@@ -22,6 +23,9 @@ export default function Three() {
 
     return <div className="mt-28 mx-auto max-w-screen-2xl w-full h-full flex flex-col markdown">
         <h1 className="text-4xl pt-5">Week 3: Trees</h1>
+        <VideoResource>
+            <a href="https://www.youtube.com/watch?v=1-l_UOFi1Xw"></a>
+        </VideoResource>
 
         <h1>Key Takeaways</h1>
         <ul>

@@ -3,6 +3,7 @@ import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { useState } from "react";
 import { Question } from "../Question";
 import { Q4generateQ1 } from "../questions/4-question";
+import VideoResource from "../../other/VideoResource";
 
 
 export default function Five() {
@@ -14,7 +15,10 @@ export default function Five() {
     const [index, setIndex] = useState(0)
 
     return <div className="mt-28 mx-auto max-w-screen-2xl w-full h-full flex flex-col markdown">
-        <h1 className="text-4xl pt-5">Week 4: Binary Search Trees</h1>
+        <h1 className="text-4xl pt-5">Week 5: Priority Queues</h1>
+        <VideoResource>
+            <a href="https://www.youtube.com/watch?v=HqPJF2L5h9U"></a>
+        </VideoResource>
 
         <h1>Key Takeaways</h1>
         <ul>
@@ -29,11 +33,11 @@ export default function Five() {
 
         <h2>Basic Operations of a Priority Queue</h2>
         <ul>
-            <li><SyntaxHighlighter language="javascript" style={docco}>insert(k, v)</SyntaxHighlighter> Adds an item with key `k` and value `v`.</li>
-            <li><SyntaxHighlighter language="javascript" style={docco}>remove_min()</SyntaxHighlighter> Removes and returns the item with the smallest key.</li>
-            <li><SyntaxHighlighter language="javascript" style={docco}>min()</SyntaxHighlighter> Returns (but does not remove) the item with the smallest key.</li>
-            <li><SyntaxHighlighter language="javascript" style={docco}>size()</SyntaxHighlighter> Returns the number of elements in the priority queue.</li>
-            <li><SyntaxHighlighter language="javascript" style={docco}>is_empty()</SyntaxHighlighter> Checks whether the priority queue is empty.</li>
+            <li>`insert(k, v)` Adds an item with key `k` and value `v`.</li>
+            <li>`remove_min()` Removes and returns the item with the smallest key.</li>
+            <li>`min()` Returns (but does not remove) the item with the smallest key.</li>
+            <li>`size()` Returns the number of elements in the priority queue.</li>
+            <li>`is_empty()` Checks whether the priority queue is empty.</li>
         </ul>
 
         <h2>Implementing Priority Queues</h2>
@@ -58,9 +62,9 @@ export default function Five() {
         <h2>Heap-Sort and Generalization</h2>
         The priority queue ADT can be leveraged for sorting using heap-sort, which has a time complexity of \( O(n \log n) \). This algorithm involves inserting all elements into a heap and repeatedly extracting the minimum element. Additionally, priority queues can support extra operations like:
         <ul>
-            <li><SyntaxHighlighter language="javascript" style={docco}>remove(e)</SyntaxHighlighter> Removes a specific element.</li>
-            <li><SyntaxHighlighter language="javascript" style={docco}>replace_key(e, k)</SyntaxHighlighter> Updates an element’s priority.</li>
-            <li><SyntaxHighlighter language="javascript" style={docco}>replace_value(e, v)</SyntaxHighlighter> Changes the value associated with a key.</li>
+            <li>`remove(e)` Removes a specific element.</li>
+            <li>`replace_key(e, k)` Updates an element’s priority.</li>
+            <li>`replace_value(e, v)` Changes the value associated with a key.</li>
         </ul>
 
         

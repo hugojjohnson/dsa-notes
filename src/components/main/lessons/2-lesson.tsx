@@ -3,6 +3,7 @@ import Tip from "../../other/Tip";
 import { useState } from "react";
 import { Question } from "../Question";
 import { Q2generateQ1 } from "../questions/2-question";
+import VideoResource from "../../other/VideoResource";
 
 
 /**
@@ -22,6 +23,9 @@ export default function Two() {
 
     return <div className="mt-28 mx-auto max-w-screen-2xl w-full h-full flex flex-col markdown">
         <h1 className="text-4xl pt-5">Week 2: Lists</h1>
+        <VideoResource>
+            <a href="https://www.youtube.com/watch?v=34ky600VTN0"></a>
+        </VideoResource>
 
         <h1>Key Takeaways</h1>
         <ul>
